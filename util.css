@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap');
+.textCenter{
+    text-align: center;
+
+}
+.flexAllCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img{
+    cursor: pointer;
+}
+.btn{
+    padding: 5px 10px;
+    color: black;
+    background-color: aqua;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+@keyframes ananda {
+    0%{
+        height: 5px;
+        width: 0vw;
+        background-color: chartreuse;
+    }
+    20%{
+        height: 5px;
+        width: 10vw ;
+        background-color: coral;
+    }
+    40%{
+        height: 5px;
+        width: 50vw;
+        background-color: aqua;
+    }
+    70%{
+        height: 5px;
+        width: 80vw;
+        background-color: darkred;
+    }
+    90%{
+        height: 5px;
+        width: 93vw;
+        background-color: deeppink;
+    }
+    100%{
+        height: 5px;
+        width: 100vw;
+        background-color: deepskyblue;
+    }
+}
+.casss{
+ animation: ananda 5s linear  infinite alternate-reverse ;
+ background-color: gold;
+}
+@keyframes ArtAnimation {
+    0% {
+      width: 10vw;
+      height: auto;
+    }
+    30% {
+      width: 40vw;
+      height: auto;
+    }
+    70% {
+      width: 80vw;
+      height: auto;
+    }
+    100% {
+      width: 95vw;
+      height: auto;
+    }
+  }
+  @keyframes ArtAnimationRev {
+    0% {
+      width: 100vw;
+      height: auto;
+    }
+    30% {
+      width: 80vw;
+      height: auto;
+    }
+    70% {
+      width: 40vw;
+      height: auto;
+    }
+    100% {
+      width: 05vw;
+      height: auto;
+    }
+  }
+.c1{
+    animation: ArtAnimationRev 5s linear  infinite alternate-reverse ;
+    background-color: deeppink;
+    text-align: center;
+}
+.c2{
+    animation: ArtAnimation 5s linear  infinite reverse ;
+    background-color:  deepskyblue;
+    text-align: center;
+}
+.c3{
+    animation: ArtAnimationRev 5s linear  infinite alternate-reverse ;
+    background-color: rgb(57, 206, 64);
+    text-align: center;
+}
+h1 {
+    font-size: 30px;
+    justify-content: center;
+    /* font-family: 'Palette Mosaic', cursive; */
+
+  }
+  .text-1 {
+    animation: text1;
+    justify-content: center;
+    text-align: center;
+    padding: 25px 25px;
+  }
+  .text-2 {
+    animation: text2;
+  }
+  .text-1,
+  .text-2 {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    animation-duration: 20s;
+    animation-timing-function: steps(25, end);
+    animation-iteration-count: infinite;
+  }
+  .text-1::after,
+  .text-2::after {
+    content: "|";
+    position: absolute;
+    right: 0;
+    animation: caret infinite;
+    animation-duration: 1s;
+    animation-timing-function: steps(1, end);
+  }
+  
+  @keyframes text1 {
+    0%,
+    50%,
+    100% {
+      width: 0;
+    }
+    10%,
+    40% {
+      width: 17em;
+    }
+  }
+  @keyframes caret {
+    0%,
+    100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
